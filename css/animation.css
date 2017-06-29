@@ -1,0 +1,63 @@
+.animate{
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+.animate1{
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+/*次数*/
+.cishu{
+    animation-iteration-count: infinite;
+}
+/*延迟*/
+.ys1{animation-delay: 1s;}
+.ys2{animation-delay: 2s;}
+.ys3{animation-delay: 3s;}
+.ys4{animation-delay: 4s;}
+
+
+/*旋转*/
+.xz{
+    animation-name: xz;
+}
+@keyframes xz {
+    0%{transform: rotateZ(-360deg)}
+    100%{transform: rotateZ(0deg)}
+}
+
+/*闪烁*/
+.ss{
+    animation-name: ss;
+}
+@keyframes ss {
+    0%{opacity: 0}
+    50%{opacity: 1}
+    100%{opacity: 0}
+}
+
+/*透明*/
+.tm{animation-name: tm}
+@keyframes tm {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+
+/*缩放*/
+.sf{animation-name: sf}
+@keyframes sf {
+    0%{transform: scaleX(0)}
+    100%{transform: scaleX(1)}
+}
+
+/*音乐按钮*/
+.rotateMusic{
+    animation: rotateMusic 1s linear infinite;
+}
+@keyframes rotateMusic {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
